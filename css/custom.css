@@ -103,3 +103,17 @@ div.tagsinput div {
   background: #FBD8DB !important;
   color: #90111A !important;
 }
+.control-box {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0 0 1px lightgray;
+    display: block;
+    padding: 20px;
+}
+.logout-control {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10px;
+}
+h3 {
+  padding-top: 10px;
+}
