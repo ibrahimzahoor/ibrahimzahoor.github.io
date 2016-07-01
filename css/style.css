@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Theme Name: Evolve
 * Author: Okathemes
 * Version: 1.1
@@ -230,7 +230,7 @@
 	-o-transition:all 0.3s ease;
 	transition:all 0.3s ease;
 }
-.menu ul > li > a:after {
+.menu ul > li > a:not(.current):after {
 	content: '';
 	display: block;
 	width: 0px;
@@ -244,7 +244,8 @@
 	position:absolute;
 	top:0px;
 }
-.menu ul > li:hover > a:after {
+
+.menu ul > li:hover > a:not(.current):after {
 transition-delay: .2s;
 -webkit-transition-delay: .2s;
 -moz-transition-delay: .2s;
@@ -256,10 +257,11 @@ transition-delay: .2s;
 	-ms-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 }
-#current {
+
+.current {
 	border-top:3px solid;
 }
-#current:after {
+.current:after {
  transition-delay: .2s;
 -webkit-transition-delay: .2s;
 -moz-transition-delay: .2s;
@@ -271,7 +273,7 @@ transition-delay: .2s;
 	-ms-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 }
-.ie8 #current:after {
+.ie8 .current:after {
 	display: none;
 }
 .menu ul li a {
@@ -556,10 +558,10 @@ opacity: 1;
  box-shadow: 3px 0 20px 0 rgba(0, 0, 0, 0.28);
 }
 }
-#jPanelMenu-menu #current {
+#jPanelMenu-menu .current {
 	border-bottom: 1px solid #eee;
 }
-#jPanelMenu-menu #current:after, #jPanelMenu-menu .sf-sub-indicator {
+#jPanelMenu-menu .current:after, #jPanelMenu-menu .sf-sub-indicator {
 	display: none;
 }
 #jPanelMenu-menu li a {

@@ -1,6 +1,6 @@
 /*
-* Theme Name: Evolve
-* Author: Okathemes
+* 
+* Author: QBatch
 * Version: 1.0.0
 
 /* Table of Content
@@ -29,6 +29,7 @@
     22. Content Animation 
     23. Parallax Section
     24. Animated Stats Numbers
+    25. Control Panel Control
 
 */
 
@@ -39,6 +40,10 @@
 (function($){
     "use strict";
 	$(document).ready(function(){
+    
+    $('#compose-area').hide();
+    $('#compose-controls').show();
+    $('#showAllPosts').hide();
 
 /* 00 Preloader
 ================================================== */
@@ -1011,10 +1016,28 @@ var isMobile = false;
                 });
             }
 
-
+    /* ------------------ Control Panel Controls ------------------ */
+    $('#showCompose').click(function (){
+      $('#compose-area').slideDown();
+      $(this).hide();
+      $('#user-posts').slideUp();
+      $('#showAllPosts').show();
+    });
+    
+    $('#showAllPosts').click(function (){
+      $('#compose-area').slideUp();
+      $(this).hide();
+      $('#user-posts').slideDown();
+      $('#showCompose').show();
+    });
 /* ------------------ End Document ------------------ */
+    
+    
+    
 });
 	
 
 
 })(this.jQuery);
+
+/* ------------------ Blog Buttons ------------------ */

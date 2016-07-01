@@ -1,0 +1,105 @@
+.parallex {
+  background-size: cover;
+}
+.google-map-container {
+  margin: 0;
+}
+.google-map-container iframe {
+  width: 100%;
+  height: 500px;
+}
+.place-name::before {
+  content: "QBatch, ";
+}
+.address::before {
+  content: "Office 2, 1st Office Floor, ";
+}
+#login-group .form-group {
+  width: 80%;
+}
+#log-in {
+  margin: 20px;
+}
+#login-area .notification p {
+  color: black !important;
+}
+.button {
+  margin-bottom: 10px;
+}
+#compose-area {
+  margin: 20px 0;
+  width: 100%;
+}
+#compose-title,
+#compose-body {
+  display: inline-block;
+  width: 100%;
+}
+#compose-body {
+  height: 500px;
+  resize: none;
+  overflow-y: auto;
+  
+}
+
+/* Custom Tags */
+
+div.tagsinput {
+  border: 1px solid #CCC;
+  background: #f8fafc none repeat scroll 0 0;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  overflow-y: auto;
+}
+
+div.tagsinput:focus, div.tagsinput:hover {
+  background: white;
+}
+div.tagsinput span.tag {
+  border-radius: 5px
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: block;
+  float: left;
+  padding: 2px 5px;
+  text-decoration: none;
+  background: #2E8FEA;
+  color: white;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-size: 13px;
+}
+div.tagsinput span.tag a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+}
+div.tagsinput input {
+  width: 80px;
+  margin: 0px;
+  font-family: inherit;
+  font-size: 13px;
+  border: 1px solid transparent;
+  padding: 5px;
+  background: transparent;
+  color: white;
+  outline: 0px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+div.tagsinput div {
+  display: block;
+  float: left;
+}
+.tags_clear {
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+.not_valid {
+  background: #FBD8DB !important;
+  color: #90111A !important;
+}
